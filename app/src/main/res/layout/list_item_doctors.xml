@@ -27,10 +27,10 @@
                 tools:ignore="UselessParent">
 
                 <TextView
-                    android:id="@+id/list_request_name"
+                    android:id="@+id/list_doctor_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/name"
+                    android:text="@string/doctor_name"
                     android:textSize="18sp"
                     android:textColor="@color/white"
                     android:fontFamily="@font/cambo"
@@ -38,17 +38,17 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/list_requested_organ"
+                    android:id="@+id/list_province"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/requested_organ"
+                    android:text="@string/province"
                     android:textSize="18sp"
                     android:textColor="@color/white"
-                    android:fontFamily="@font/cambo"
                     android:layout_marginTop="5dp"
+                    android:fontFamily="@font/cambo"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/list_request_name" />
+                    app:layout_constraintTop_toBottomOf="@+id/list_name" />
 
             </LinearLayout>
 

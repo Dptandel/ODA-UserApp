@@ -12,7 +12,6 @@ public class donor extends AppCompatActivity {
 
     Toolbar toolbar;
 
-
     @SuppressLint("NonConstantResourceId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +24,7 @@ public class donor extends AppCompatActivity {
         CardView cardView1 = findViewById(R.id.cardView1);
 
         cardView1.setOnClickListener(view -> {
-            Intent intent = new Intent(getApplicationContext(),donate_an_organ_form.class);
+            Intent intent = new Intent(getApplicationContext(),donate_organ.class);
             startActivity(intent);
         });
 

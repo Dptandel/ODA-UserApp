@@ -6,36 +6,36 @@
     android:layout_height="match_parent"
     android:background="@drawable/oda_background"
     android:fitsSystemWindows="true"
+    android:orientation="vertical"
     tools:context=".request_organ">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="@string/organ_requests"
+        app:titleMarginStart="40dp"
+        app:titleTextColor="@color/white" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/purple_700"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:title="@string/organ_requests"
-            app:titleMarginStart="40dp"
-            app:titleTextColor="@color/white"
-            tools:ignore="MissingConstraints" />
-
         <ScrollView
+            android:id="@+id/scrollView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+            app:layout_constraintTop_toTopOf="parent">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/mOrganRequests"
-                android:layout_width="wrap_content"
-                android:layout_height="200dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/toolbar" />
         </ScrollView>
 
@@ -44,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="24dp"
-            android:backgroundTint="@color/purple_500"
+            android:backgroundTint="@color/purple_200"
             android:contentDescription="@string/todo"
             android:src="@drawable/ic_add"
             app:fabSize="normal"

@@ -34,4 +34,7 @@
     <string name="organ_requests">Organ Requests</string>
     <string name="organ_request_form">Organ Request Form</string>
     <string name="requested_organ">Requested Organ</string>
+    <string name="donated_organ">Donated Organ</string>
+    <string name="doctor_name">Doctor Name</string>
+    <string name="province">Province</string>
 </resources>

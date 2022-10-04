@@ -7,7 +7,7 @@
     android:background="@drawable/oda_background"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context=".doctor">
+    tools:context=".donate_organ">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -15,10 +15,9 @@
         android:layout_height="wrap_content"
         android:background="@color/purple_700"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:title="@string/doctors"
+        app:title="Donate an Organ"
         app:titleMarginStart="40dp"
-        app:titleTextColor="@color/white"
-        tools:ignore="MissingConstraints" />
+        app:titleTextColor="@color/white" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -34,22 +33,24 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/mDoctors"
+                android:id="@+id/mOrganDonors"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/toolbar" />
         </ScrollView>
 
-        <ProgressBar
-            android:id="@+id/progressBar"
-            style="?android:attr/progressBarStyle"
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_donateOrgan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:visibility="gone"
+            android:layout_margin="24dp"
+            android:backgroundTint="@color/purple_200"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_add"
+            app:fabSize="normal"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

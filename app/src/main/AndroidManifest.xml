@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ODA_User">
         <activity
+            android:name=".contact_us"
+            android:exported="false" />
+        <activity
+            android:name=".donate_organ"
+            android:exported="false" />
+        <activity
             android:name=".doctor"
             android:exported="false" />
         <activity

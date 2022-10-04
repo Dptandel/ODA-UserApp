@@ -55,7 +55,7 @@ public class request_organ extends AppCompatActivity {
 
             @Override
             protected void onBindViewHolder(@NonNull organRequestViewHolder holder, int position, @NonNull organRequestModel model) {
-                holder.list_name.setText(model.getName());
+                holder.list_request_name.setText(model.getRecipient_name());
                 holder.list_requested_organ.setText(model.getRequestedOrgan());
             }
         };
@@ -74,13 +74,12 @@ public class request_organ extends AppCompatActivity {
 
     private static class organRequestViewHolder extends RecyclerView.ViewHolder {
 
-        private final TextView list_name;
+        private final TextView list_request_name;
         private final TextView list_requested_organ;
 
         public organRequestViewHolder(@NonNull View itemView) {
             super(itemView);
-
-            list_name = itemView.findViewById(R.id.list_name);
+            list_request_name = itemView.findViewById(R.id.list_request_name);
             list_requested_organ = itemView.findViewById(R.id.list_requested_organ);
         }
     }
